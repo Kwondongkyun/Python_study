@@ -1,0 +1,22 @@
+boolean형
+: 참(True)과 거짓(False)만을 갖는 자료형
+ex) a = True
+    type(a) : <class 'bool'>
+    
+※ 비교 연산자 :  결과를 boolean형으로 반환
+
+
+
+논리 연산자 : boolean형의 값들의 연산자
+
+1. X and Y
+2. X or Y
+3. not X
+-> 결과값 : boolean 형
+
+
+
+조건문
+1. if 조건: ~
+
+2. if 조건: ~ else: ~
