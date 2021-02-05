@@ -58,7 +58,24 @@ ex) print('my age is', 21) : my age is 21
    ex) print(1,2,3,4, sep='^', end='->')
        print(5678)
        결과 :  1^2^3^4->5678
-
+       
+※ format 인수 : 포매팅을 통해 특정 서식에 따라 문자 출력 가능
+   ex) print("{0}월 {1}일 입니다.",format(10, 31))
+       -> 10월 31일 입니다.
+       
+   % 기호 사용 format
+   ex) print("%s %d개"%("과자", 10))
+       -> 과자 10개
+       
+       
+※ split 함수 : 한 번에 여러 개 입력받기
+   -> input에서 split사용(정수 or 실수로 변환하려면 map 사용)
+   ex) a, b = input().split()  :  값 두 개를 입력받아 변수 두 개에 문자열로 저장
+       a, b = map(int, input().split())  :  값 두 개를 입력받아 변수 두 개에 정수로 저장
+       a, b = map(float, input().split())  :   값 두 개를 입력받아 변수 두 개에 실수로 저장
+       
+   ex) a, b = map(int, input().split())
+       print(a+b)
 
 
 
