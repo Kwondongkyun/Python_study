@@ -21,3 +21,8 @@
 3. 예약어 사용X
    ex) False, True, and, for, not, or ...
 4. 대문자, 소문자 구분
+
+
+* 변수 삭제 (del 변수)
+  ex) x = 10
+      del x
