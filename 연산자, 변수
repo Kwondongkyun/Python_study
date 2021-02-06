@@ -8,7 +8,7 @@
 2. // : 몫 연산자
    ex) 7 // 2 = 3
 
-3. = : 할당문 연산자
+3. = : 할당문 연산자 
    -> 변수 : 사용 전 반드시 할당
    ex) NameError: name 'number' is not defined
 
