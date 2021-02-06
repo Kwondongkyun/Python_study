@@ -4,7 +4,7 @@
 type() 함수 : 해당하는 변수 or 값의 자료형을 알려줌
 -> 인수의 자료형을 반환
 ex) type(10) : <class 'int'>
-    type(1.0) : <class 'float'>
+    type(1.0) : <class 'float'> 
 
 ※ int형과 float형이 함께 쓰이는 경우 결괏값 : float형
 
