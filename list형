@@ -1,0 +1,51 @@
+list형 : variable_name = [element_1, element_2, ...]
+-> 기호 : []
+-> list의 원소로 또 다른 list도 허용
+-> 원소가 없는 list 허용 ex) a = []
+
+
+
+list형의 index
+-> string형과 유사
+-> '0'번째 요소부터 순서를 매김
+ex) fruit = ['apple', 'banana', 'cherry', 'orange']
+    print(fruit[0]) -> apple
+-> index에 연산 사용 가능(나눗셈 연산 제외)
+-> 'in', 'not in' 키워드 이용 -> list의 원소가 맞는지 확인 가능
+
+※ index에 음수 값을 넣을 수 있다.
+
+
+
+list형 길이 : len(list or list_name)
+
+
+list형 간의 연산자 ('+', '*')
+-> list_name + list_name : 여러 개의 list형을 하나의 list형으로 병합하는 연산
+-> list_name * number : 주어진 숫자만큼 list형을 반복하는 연산
+ex) a=[1,2,3]
+    b=[4,5]
+    print(a+b) -> [1, 2, 3, 4, 5]
+    
+ex) a=[1,2,3]
+    print(a*3) -> [1, 2, 3, 1, 2, 3, 1, 2, 3]
+    
+    
+    
+    
+list형의 일부분 추출 : Slice
+-> list_name[index1 : index2] : index1 이상, index2 미만 (index1 ~ index2-1)
+-> list_name[ : ] : 모든 범위의 list
+-> list_name[ : index2] : 처음부터 index2 미만
+-> list_name[index1 : ] : index1부터 끝까지
+
+※ 음수 index도 가능
+
+
+
+list형 원소 변경 : list_name[index] = new_element
+-> list에서 index에 해당하는 원소를 새로운 원소로 교체
+
+
+
+
