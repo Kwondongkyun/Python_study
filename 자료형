@@ -1,0 +1,120 @@
+tuple형 : variable_name = (element_1, element_2, ...)
+-> list형과 달리 tuple형은 원소의 생성, 추가, 삭제, 갱신, 순서 변화 등 수정 X
+-> 기호 : ()
+-> 혼용 자료형 원소 가능 : (1, 2, [1, 2], [2, 3, 4], ('w', 'm'))
+-> 빈 tuple 가능 : ()
+-> 하나의 원소를 갖는 tuple : 쉼표(,) 필수
+   ex) a=(1,)
+       print(a) -> (1,)
+
+       
+
+
+
+tuple 생성 : tuple( )
+ex) a = 'banana'
+    a = tuple(a)
+    print(a) -> ('b', 'a', 'n', 'a', 'n', 'a')
+    
+    
+    
+tuple형의 index
+-> list형과 동일
+
+
+
+tuple의 연산
+-> 원소로 구성, index 구조 : slice, +, -, * 연산 가능
+
+1) slice
+   a = ('apple', 2, 13, 'cake')
+   print(a[1:2]) -> (2,)          ※ 쉼표(,) 주의하기
+
+2) +
+   a = ('apple', 2, 13, 'cake')
+   b = ('love',)
+   print(a+b) -> ('apple', 2, 13, 'cake', 'love')
+   
+3) *
+   a=(1, 'apple', 'power')
+   print(a*3) -> (1, 'apple', 'power', 1, 'apple', 'power', 1, 'apple', 'power')
+   
+4) len() 함수 사용 가능
+
+
+
+
+list형, tuple형 비교
+-> 공통점
+   1) 원소로 구성
+   2) slice, index 기능 사용 가능
+
+-> 차이점
+   1) list형 : 대괄호[] 사용, tuple형 : 소괄호() 사용
+   2) list형 : 수정 가능, tuple형 : 수정 불가능
+
+
+
+
+
+set형 : variable_name = {element_1, element_2, ...}
+-> 기호 : {}
+-> 원소 : 동일한 자료형, 혼용 자료형, 빈 set 가능
+-> 특징
+   1) 중복 허용 X
+      ex) a = {1,2,3,4,4,5,5,6}
+          print(a) -> {1, 2, 3, 4, 5, 6}
+
+   2) 순서 X : index, slice 사용 X
+      ex) 'set' object is not subscriptable 오류
+      
+      
+   3) len() 함수 사용 가능
+   
+   
+   
+   4) 집합 연산 사용 가능(교집합, 합집합, 차집합)
+      -> 교집합(&)
+         ex) a = {0,1,2,3,4}
+             b = {3,4,5,6,7}
+             print(a & b) -> {3, 4}
+      
+      -> 합집합(|)
+         ex) a = {0,1,2,3,4}
+             b = {3,4,5,6,7}
+             print(a | b) -> {0, 1, 2, 3, 4, 5, 6, 7}
+             
+      -> 차집합(-)
+         ex) a = {0,1,2,3,4}
+             b = {3,4,5,6,7}
+             print(a - b) -> {0, 1, 2}
+             
+   5) in 연산자 사용 O -> boolean형 반환
+   
+   
+   
+dictionary형 : {key1 : value1, key2 : value2, ...}
+-> 원소 : key와 value로 구성, 콜론(:)으로 나누어 표기
+-> key값 : 변경되면 X -> list형, dictionary형 사용X, tuple형 사용 O
+-> value값 : string형, list형, tuple형 등 모든 자료형 사용 O
+ex) a = {'banana':'100', 'apple':'200'}
+    print(a['banana']) -> 100
+    
+-> index 값이 아닌 key 값에 의해 value를 찾는다.
+-> index 사용 X -> 원소들의 출력 순서 정해지지 X
+    
+※ key : 고유한 값 -> 중복되면 나머지 중복되는 쌍 제거
+
+-> dictionary형 새로운 원소 추가 : a[key] = value
+-> dictionary형 원소 제거 : 
+
+
+
+
+
+
+      
+
+    
+
+
