@@ -1,0 +1,93 @@
+While문
+-> 조건에 만족하는 동안 True_statements 반복적으로 수행
+ex) while 조건:
+        True_statements
+
+
+while문의 break문
+-> 무한 루프를 빠져나오는 방법
+-> break문 : 반복을 강제로 중단
+ex) while 조건(참):
+        True_statements
+    (break) 조건:
+        break
+
+
+
+
+for문
+-> 시작값과 종료값 등으로 범위를 지정하고 반복 수행
+ex) for item in sequence:
+        True_statements
+
+
+
+1) range() 함수를 활용
+   -> start부터 step만큼씩 증가/감소, stop전까지 범위 지정
+   ex) range([start,]stop[,step]) -> start값 포함, stop값 제외
+   
+   * start와 stop에는 정수(int형)만 쓸 수 있다.
+   * start와 step 생략 O(start 생략 -> start : 0, step 생략 -> step : 1)
+   * step != 0
+   * stop 생략 X
+   
+   
+2) range() 함수 활용 for문
+   -> range 범위 내의 variable 각각에 대해서 True_statements를 반복적으로 수행
+   ex) for variable in range(num):
+           True_statements
+        
+   ex) a=int(input('enter the num: '))
+       count=1
+       sum=0
+       for count in range(a):
+           sum+=count
+       print(sum)
+
+    
+* while문과 for문의 상호 변환 가능
+
+
+
+3) list를 활용한 for문
+   -> list 범위 내의 variable 각각에 대해서 True_statements를 반복적으로 수행
+   ex) for variable in list:
+           True_statements
+   
+   ex) animal = ['dog', 'cat', 'bird']
+       for i in animal:
+           print('I love', i) 
+           -> I love dog
+              I love cat
+              I love bird
+              
+4) 문자열을 활용한 for문
+   -> 문자열 범위 내의 character 각각에 대해서 True_statements를 반복적을 수행
+   ex) for character in 'string':
+           True_statements
+
+
+* for문에서도 break문 사용 가능
+    
+
+
+예시 코드
+1) 형 구분
+   a=['apple',1,43,'we',12]
+   for i in a:
+       if(type(i)==int):
+              print('int')
+       elif(type(i)==str):
+              print('string')
+       
+       
+       
+2) 5의 배수 출력(0 ~ 50)
+   for i in range(51):
+    if i%5==0:
+        print(i)
+
+
+
+
+
