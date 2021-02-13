@@ -1,0 +1,56 @@
+객체와 클래스
+-> 클래스 : 타입
+-> 객체 : 변수
+ex) 클래스 : 사람, 자동차...
+    객체 : 이름, 차 번호...
+    
+    
+클래스 구조
+-> 속성(자료 구조) + 메소드(함수)
+   
+객체의 매소드 활용(. + 메소드 이름)
+ex) 객체.method()
+    str.lower()
+    str.upper()
+    list.append(item)
+    list.copy()
+      
+       
+str 클래스의 메소드
+-> str.lower() : 문자열의 모든 문자를 소문자로 변환
+-> str.upper() : 문자열의 모든 문자를 대문자로 변환
+-> str.swapcase() : 문자열의 대문자 -> 소문자, 소문자- > 대문자
+-> str.capitalize() : 문자열의 첫 글자만 대문자로 변환
+-> str.title() : 문자열에서 단어의 첫 문자들을 대문자로 변환
+-> str.replace(old, new) : 문자열의 부분 문자열인 old를 new로 변환
+
+
+
+
+list 클래스의 메소드
+-> list.insert(i, x) : list i번째 index에 x 추가
+-> list.append(item) : list의 마지막에 item 추가
+-> del list[index] : list의 해당 index의 원소 제거
+-> del list[index1 : index2] : list의 해당 범위의 원소 제거
+-> list.copy() : list의 복사본 생성
+-> list.remove(item) : list에서 처음으로 나오는 item과 값이 동일한 원소 제거
+-> list.reverse(item) : list의 원소를 역순으로 정렬
+
+
+
+
+import 문 (외부 클래스 사용)
+-> import 클래스명 : 파이썬이 제공하는 클래스의 멤버와 메소드 사용 가능
+   ex) import math
+       import random
+       import statistics
+       
+1) random 클래스
+-> random.random() : 0 ~ 1 사이의 실수형 임의값 생성
+-> random.randint(a, b) : a 이상 b 이하의 범위의 정수형 임의값 생성
+-> random.choice(seq) : list or tuple형의 원소들 중 랜덤으로 추출
+
+
+
+
+
