@@ -1,1 +1,3 @@
 - Study Python again
+- Finish
+- 2/2 ~ 2/14
