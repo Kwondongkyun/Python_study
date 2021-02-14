@@ -1,0 +1,70 @@
+내장 함수
+1) bool([x])
+-> boolean값, 참 or 거짓 중 하나를 반환
+
+2) float([x])
+-> 다른 형의 숫자 or 숫자로 이루어진 문자열을 float형(실수형) 변수로 반환
+-> 부호 상관 X, 공백 제거
+
+3) id(object)
+-> 개체의 정체성(ID) 반환
+-> 메모리에서 개체의 주소
+
+4) input([prompt])
+-> 값을 입력받아 문자열로 반환
+
+5) int(x)
+-> 다른 형의 숫자 or 정수로 이루어진 문자열을 int형(정수형) 변수로 반환
+-> float형 : 소숫점 아래 값들은 전부 버려짐
+
+6) len(s)
+-> 객체의 길이 반환
+-> 인자 : string형, tuple형, list형, dictionary형, set형, range() 함수 등
+
+7) list([iterable])
+-> 자료형을 list형으로 반환
+-> 인자 : string형, tuple형, range() 함수
+
+8) max(a1, a2, ...), max(iterable)
+-> 가장 큰 값 반환
+-> 하나의 숫자만은 입력 불가
+-> 하나의 값 입력 시 iterable : list형, tuple형, string형
+
+
+9) min(a1, a2, ...), min(iterable)
+-> 가장 작은 값 반환
+-> 하나의 숫자만은 입력 불가
+-> 하나의 값 입력 시 iterable : list형, tuple형, string형
+
+
+10) print(s)
+-> 문자열 출력
+
+
+11) range([start,] stop [,step])
+-> 인자 : start, stop, step으로 구성
+-> start부터 step만큼씩 증가/감소하여 stop전까지 범위 지정
+
+12) set([iterable])
+-> 값을 set형으로 반환
+-> 인자 : list형, tuple형, string형
+
+
+13) str(object)
+-> 인자의 값을 문자열로 반환
+
+
+14) sum(iterable)
+-> 총 합을 반환
+-> 인자 : list형, tuple형, set형
+
+
+15) tuple([iterable])
+-> 자료형을 tuple형으로 반환
+-> 인자 : list형, tuple형, set형
+
+
+16) type(object)
+-> 개체의 자료형 반환
+
+
