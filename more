@@ -10,3 +10,25 @@ list 조작 함수
 -> .count() : 리스트에서 찾을 값의 개수를 세기 (원소의 개수 세기)
 -> del(list_name[index]) : 리스트에서 해당 위치의 항목 삭제
 -> len(list_name) : 리스트에 포함된 전체 항목의 개수를 세기
+
+
+
+
+문자열 포맷팅
+1) %-formatting : %d/%f/%s 등 사용
+   ex) name = 'james'
+       age = 21
+       print('이름: %s ,나이: %d' %(name, age))
+       -> 이름: james ,나이: 21
+
+2) '{}'.format() : ()안에 대입할 문자 or 숫자 입력
+   ex) print("My name is {}".format('james'))
+       -> My name is james
+       
+       
+3) f-Strings : 문자, 숫자, 함수, 메소드 등 다양한 타입 가능
+   ex) name = 'james'
+       age = 21
+       print(f"Hello, {name}. You are {age}.")
+       -> Hello, james. You are 21.
+   
