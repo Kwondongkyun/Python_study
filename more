@@ -41,5 +41,40 @@ strip 메서드
 
 
 
+endswith, startswith 메서드
+-> endswith : 파일 이름이 문자열로 저장되어 있을 때
+   ex) file_name = "보고서.xlsx"
+       print(file_name.endswith("xlsx"))
+       -> True
+
+
+-> startswith : 파일 이름이 문자열로 저장되어 있을 때
+   ex) file_name = "2020_보고서.xlsx"
+       print(file_name.startswith("2020")
+       -> True
+       
+       
+       
+split 메서드
+-> 공백을 기준으로 문자열 나누기
+   ex) a = "hello world"
+       print(a.split())
+       -> ['hello', 'world'] (list 형)
+      
+      
+join 메서드
+-> "".join(리스트) : 리스트의 문자열들을 합치는 역할
+   ex) name = ['james', 'kevin', 'sam', 'kane']
+       print(" ".join(name))
+       -> james kevin sam kane (type : str)
+
+
+       
+       
+       
+       
+       
+
+
 
 
