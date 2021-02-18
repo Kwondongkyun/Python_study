@@ -1,3 +1,2 @@
-- Study Python again
-- Finish
-- 2/2 ~ 2/14
+- Study Python again(2/2 ~ 2/14)
+- BOJ (2/17 ~)
