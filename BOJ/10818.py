@@ -1,0 +1,14 @@
+N=int(input())
+a=list(map(int, input().split()))
+max=a[0]
+min=a[0]
+for j in range(N):
+    if a[j]>max:
+        max=a[j]
+    if a[j]<min:
+        min=a[j]
+
+print(min, max, sep=' ')
+
+
+147116 KB       556 ms
