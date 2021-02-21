@@ -11,4 +11,15 @@ for j in range(N):
 print(min, max, sep=' ')
 
 
-147116 KB       556 ms
+147116 KB   556 ms
+
+
+
+import sys
+input = sys.stdin.readline
+N = input()
+
+num_list = list(map(int, input().split()))
+print(min(num_list), max(num_list), end='')
+
+-> sys 내장함수 사용
