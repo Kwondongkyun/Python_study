@@ -23,3 +23,14 @@ num_list = list(map(int, input().split()))
 print(min(num_list), max(num_list), end='')
 
 -> sys 내장함수 사용
+
+
+
+
+N=int(input())
+a=list(map(int, input().split()))
+    
+print(min(a), max(a), sep=' ')
+
+
+147100 KB	484 ms
