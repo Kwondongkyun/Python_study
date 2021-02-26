@@ -1,0 +1,63 @@
+< 자료형 >
+- int : 부호 O 정수
+- unit : 부호 X 정수
+- float : 실수
+- complex : 복소수
+- bool : 논리형
+- string_ : 문자열
+- object : 파이썬 객체
+- unicode : 유니코드
+
+
+
+※ import numpy as np
+
+ex_1)
+import numpy as np
+lst1=[1,2,3,4,5]
+print(lst1) -> [1, 2, 3, 4, 5]
+arr1=np.array(lst1)
+print(arr1) -> [1 2 3 4 5]        // numpy 배열은 쉼표 없이 출력, type(arr1) : numpy.ndarray
+                                                                              -> ndarray 타입 : 모든 차원에 대한 자료형O
+
+len(arr1) -> 5
+
+
+ex_2)
+lst2 = [[1,2,3],[4,5,6],[7,8,9],[10,11,12]]
+arr2 = np.array(lst2)
+
+
+
+< 크기 >
+- len() 함수 : 1차원에서의 총 개수
+  len(arr2) -> 4
+- size() 함수 : 원소의 개수(크기)
+  print(np.size(arr1)) -> 5
+  print(np.size(arr2)) -> 12
+  -> 원소의 개수
+
+
+
+< 차원 >
+- ndim() 함수 : n차원인지 구함
+  print(np.ndim(arr1)) -> 1
+  print(np.ndim(arr2)) -> 2
+
+- shape() 함수 : 각 차원의 원소의 개수
+  print(np.shape(arr1)) -> (5,)
+  print(np.shape(arr2)) -> (4, 3)
+
+
+< 자료형 확인 >
+- dtype() 함수 : 데이터의 자료형 확인
+  print(arr1.dtype) -> int32
+  print(arr2.dtype) -> int32
+  
+- astype() 함수 : 다른 데이터 타입으로 변경
+  print(arr1.astype(float)) -> [1. 2. 3. 4. 5.]
+  print(arr1.astype(complex)) -> [1.+0.j 2.+0.j 3.+0.j 4.+0.j 5.+0.j]         // complex : 복소수
+  print(arr1.astype(np.string_)) -> [b'1' b'2' b'3' b'4' b'5']                // 문자열로 변경 시 string(X), np.string(O)
+
+
+
