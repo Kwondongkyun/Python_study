@@ -16,7 +16,7 @@
 5) int(x)
 -> 다른 형의 숫자 or 정수로 이루어진 문자열을 int형(정수형) 변수로 반환
 -> float형 : 소숫점 아래 값들은 전부 버려짐
-
+ 
 6) len(s)
 -> 객체의 길이 반환
 -> 인자 : string형, tuple형, list형, dictionary형, set형, range() 함수 등
