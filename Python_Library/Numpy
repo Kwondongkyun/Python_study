@@ -30,9 +30,9 @@ arr2 = np.array(lst2)
 
 
 < 크기 >
-- len() 함수 : 1차원에서의 총 개수
+- len() 함수 : 1차원에서의 총 개수 구하는 함수
   len(arr2) -> 4
-- size() 함수 : 원소의 개수(크기)
+- size() 함수 : 원소의 개수(크기) 구하는 함수
   print(np.size(arr1)) -> 5
   print(np.size(arr2)) -> 12
   -> 원소의 개수
@@ -40,24 +40,117 @@ arr2 = np.array(lst2)
 
 
 < 차원 >
-- ndim() 함수 : n차원인지 구함
+- ndim 함수 : n차원인지 구하는 함수
   print(np.ndim(arr1)) -> 1
   print(np.ndim(arr2)) -> 2
 
-- shape() 함수 : 각 차원의 원소의 개수
+- shape 함수 : 각 차원의 원소의 개수 세는 함수
   print(np.shape(arr1)) -> (5,)
   print(np.shape(arr2)) -> (4, 3)
 
 
 < 자료형 확인 >
-- dtype() 함수 : 데이터의 자료형 확인
+- dtype 함수 : 데이터의 자료형 확인 함수
   print(arr1.dtype) -> int32
   print(arr2.dtype) -> int32
   
-- astype() 함수 : 다른 데이터 타입으로 변경
+- astype 함수 : 다른 데이터 타입으로 변경 함수
   print(arr1.astype(float)) -> [1. 2. 3. 4. 5.]
   print(arr1.astype(complex)) -> [1.+0.j 2.+0.j 3.+0.j 4.+0.j 5.+0.j]         // complex : 복소수
   print(arr1.astype(np.string_)) -> [b'1' b'2' b'3' b'4' b'5']                // 문자열로 변경 시 string(X), np.string(O)
+
+
+
+
+< 배열 생성 함수 >
+- np.nan, np.inf
+  NaN(Not a Number) : 숫자가 아님을 뜻하는 상수
+  INF(Infinite) : 무한대 값
+  
+  
+- asfarray() : 배열을 float 자료형으로 바꿔서 생성하는 함수
+
+- asarray_chkfinite(check finite) : np.nan or np.inf가 배열에 들어있는지 확인
+  ex)
+  import numpy as np
+  arr4=np.array([1,2,3,4])
+  arr5=np.array([1,2,np.nan,4])
+  print(np.asarray_chkfinite(arr4))
+  print(np.asarray_chkfinite(arr5))
+  -> 배열에 들어있는 경우 ValueError 발생
+  -> 들어있지 않을 경우 : 배열 출력
+
+
+- arange() : ndarray 반환하는 함수(range 함수와 비슷한 역할)
+  ex)
+  print(np.arange(5))
+  -> [0 1 2 3 4]
+  print(np.arange(3, 10))
+  -> [3 4 5 6 7 8 9]
+  print(np.arange(2, 10, 2))
+  -> [2 4 6 8]
+  
+     
+- linspace(), logspace() : 숫자 범위 사이에서 선형 or 로그 간격으로 일정하게 숫자 배열
+  ex)
+  print(np.linspace(0, 1, 4))
+  -> [0.         0.33333333 0.66666667 1.        ]
+  print(np.logspace(0.1, 1, 10))
+  -> [ 1.25892541  1.58489319  1.99526231  2.51188643  3.16227766  3.98107171  5.01187234  6.30957344  7.94328235 10.        ]
+     
+- zeros(), ones(), full() : 특정값으로 전체 배열을 채워주는 함수(zeros : 0, ones : 1)
+  ex)
+  print(np.zeros(5))
+  -> [0. 0. 0. 0. 0.]           // float64
+  print(np.zeros((2, 3)))
+  ->[[0. 0. 0.]  
+     [0. 0. 0.]]
+  
+  print(np.ones(3))
+  -> [1. 1. 1.]
+  print(np.ones((2, 3, 4)))
+  -> [[[1. 1. 1. 1.]  
+       [1. 1. 1. 1.]  
+       [1. 1. 1. 1.]]  
+       
+     [[1. 1. 1. 1.]  
+      [1. 1. 1. 1.] 
+      [1. 1. 1. 1.]]]
+  
+  print(np.full(3, 4))
+  -> [4 4 4]
+  print(np.full((2, 4), 5))
+  -> [[5 5 5 5]  
+      [5 5 5 5]]
+  
+  
+- eye, identity : 2차원 항등행렬을 만드는 함수
+  (항등행렬 : 행렬이 정방행렬이고, 주대각선 상의 원소들이 1이고, 나머지의 원소들이 0일 경우)
+  (정방행렬(square matrix) : 같은 수의 행과 열을 가지는 행렬)
+  ex)
+  print(np.eye(3))
+  -> [[1. 0. 0.]
+      [0. 1. 0.]
+      [0. 0. 1.]]
+  print(np.identity(4))
+  -> [[1. 0. 0. 0.]
+      [0. 1. 0. 0.]
+      [0. 0. 1. 0.]
+      [0. 0. 0. 1.]]
+  
+  
+- reshape() 함수 : 1차원 배열을 다차원 배열로 바꿔주는 함수
+  ex)
+  arr6 = np.arange(12)
+  print(arr6)
+  -> [ 0  1  2  3  4  5  6  7  8  9 10 11]
+  print(np.arange(12).reshape(3,4))
+  ->  [[ 0  1  2  3]
+       [ 4  5  6  7]
+       [ 8  9 10 11]]
+
+
+
 
 
 
