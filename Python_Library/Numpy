@@ -92,6 +92,7 @@ arr2 = np.array(lst2)
   
      
 - linspace(), logspace() : 숫자 범위 사이에서 선형 or 로그 간격으로 일정하게 숫자 배열
+  - numpy.logspace(start, stop, num, endpoint, base, dtype)
   ex)
   print(np.linspace(0, 1, 4))
   -> [0.         0.33333333 0.66666667 1.        ]
