@@ -197,10 +197,10 @@ print(arr1[:, 0])
 
 
 < numpy 배열 복사 >
-.copy() 함수 : 값만 복사(주소 X)
+.copy() 함수 : 값만 복사(주소 X)         // 대입연산자(=) 사용 -> 주소 복사
 ex)
 arr2 = np.arange(7)
-arr3 = arr2[1:5].copy()                 // .copy() 함수 사용
+arr3 = arr2[1:5].copy()                 // .copy() 함수 사용 -> 값만 복사
 print(arr2)
 print(arr3)
 -> [0 1 2 3 4 5 6]
