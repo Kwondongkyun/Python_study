@@ -165,3 +165,67 @@ arr2 = np.array(lst2)
       [ 9 10 11]]
   
 
+
+< numpy 배열 슬라이싱 & 인덱싱 >
+ex_1)
+import numpy as np
+lst1=[[1,2,3],[4,5,6],[7,8,9],[10,11,12]]
+arr1=np.array(lst1)
+print(arr1)
+-> [[ 1  2  3]
+    [ 4  5  6]
+    [ 7  8  9]
+    [10 11 12]]
+
+print(arr1[0:2, 0:2])         // 0, 1 행의 0, 1번 열
+-> [[1 2]
+    [4 5]]
+
+print(arr1[1:, 2:])           // 1~ 행의 2~ 번 열
+-> [[ 6]
+    [ 9]
+    [12]]
+
+print(arr1[0])
+print(arr1[0, ])
+print(arr1[0, :])
+-> [1 2 3]
+
+print(arr1[:, 0])
+-> [ 1  4  7 10]
+
+
+
+< numpy 배열 복사 >
+.copy() 함수 : 값만 복사(주소 X)
+ex)
+arr2 = np.arange(7)
+arr3 = arr2[1:5].copy()                 // .copy() 함수 사용
+print(arr2)
+print(arr3)
+-> [0 1 2 3 4 5 6]
+   [1 2 3 4]
+   
+arr3[2]=10
+print(arr2)
+print(arr3)
+-> [0 1 2 3 4 5 6]
+   [ 1  2 10  4]
+
+
+
+< numpy 배열 인덱싱 >
+ex)
+print(arr1)
+-> [[ 1  2  3]
+    [ 4  5  6]
+    [ 7  8  9]
+    [10 11 12]]
+    
+print(arr1[0,2])
+-> 3
+
+print(arr1[[0,2],[1,2]])                // (0, 1), (2, 2)
+-> [2 9]                                    행 열   행 열
+
+
