@@ -571,7 +571,24 @@ print(data[(subject=='math')|(subject=='chem'), :])   // 'chem' : subject's 3, 6
   ex_4)
   print(np.cumsum(a))                                   // 각 원소들의 누적 합 표시
   print(np.cumprod(a))                                  // 각 원소들의 누적 곱 표시
-
-
-
-
+  
+  
+  
+  ★★★★★
+  ex_5)
+  print(a.sum(axis=0))                                  // axis 이용 -> 축의 번호 지정 가능
+  print(np.sum(a, axis=0))
+  print(a.sum(axis=1))
+  print(np.sum(a, axis=1))
+  
+  
+  
+  
+  ex_6)
+  a=np.array([1,2,3,4])
+  b=np.sum(a)
+  c=np.sum(a, keepdims=True)                // keepdims : 통계 값을 구할 때 차원을 유지한 채로 통계 값을 구할 수 있다.
+  print(b)                                     -> keepdims == True, 1차원인 a의 차원을 유지한채로 10 출력
+  -> 10
+  print(c)
+  -> [10]
