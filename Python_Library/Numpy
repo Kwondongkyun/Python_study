@@ -417,7 +417,7 @@ print(data[(subject=='math')|(subject=='chem'), :])   // 'chem' : subject's 3, 6
 ● 연산 함수 이용
   ex_1)
   y=np.array([2,3,4,5,6])
-  print(np.add(x,y))              // 
+  print(np.add(x,y))              // 덧셈
   -> [ 3  5  7  9 11]
   print(np.subtract(x,y))         // 뺄셈
   -> [-1 -1 -1 -1 -1]
