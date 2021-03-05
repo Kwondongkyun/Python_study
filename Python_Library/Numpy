@@ -394,21 +394,21 @@ print(data[(subject=='math')|(subject=='chem'), :])   // 'chem' : subject's 3, 6
 ● 연산자 이용
   ex)
   x=np.array([1,2,3,4,5])
-  print(x+1)
+  print(x + 1)
   -> [2 3 4 5 6]
-  print(x-1)
+  print(x - 1)
   -> [0 1 2 3 4]
-  print(x*2)
+  print(x * 2)
   -> [ 2  4  6  8 10]
-  print(x/2)
+  print(x / 2)
   -> [0.5 1.  1.5 2.  2.5]
-  print(x//2)
+  print(x // 2)
   -> [0 1 1 2 2]
-  print(x%2)
+  print(x % 2)
   -> [1 0 1 0 1]
-  print(x**2)
+  print(x ** 2)
   -> [ 1  4  9 16 25]
-  print(2**x)
+  print(2 ** x)
   -> [ 2  4  8 16 32]
   
   
@@ -417,15 +417,15 @@ print(data[(subject=='math')|(subject=='chem'), :])   // 'chem' : subject's 3, 6
 ● 연산 함수 이용
   ex_1)
   y=np.array([2,3,4,5,6])
-  print(np.add(x,y))              // 덧셈
+  print(np.add(x, y))              // 덧셈
   -> [ 3  5  7  9 11]
-  print(np.subtract(x,y))         // 뺄셈
+  print(np.subtract(x, y))         // 뺄셈
   -> [-1 -1 -1 -1 -1]
-  print(np.multiply(x,y))         // 곱셈
+  print(np.multiply(x, y))         // 곱셈
   -> [ 2  6 12 20 30]
-  print(np.divide(x,y))           // 나눗셈
+  print(np.divide(x, y))           // 나눗셈
   -> [0.5        0.66666667 0.75       0.8        0.83333333]
-  print(np.power(x,y))            // 제곱수
+  print(np.power(x, y))            // 제곱수
   -> [    1     8    81  1024 15625]
   print(np.mod(x,y))              // 나머지
   -> [1 2 3 4 5]
