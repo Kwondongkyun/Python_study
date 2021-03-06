@@ -592,3 +592,4 @@ print(data[(subject=='math')|(subject=='chem'), :])   // 'chem' : subject's 3, 6
   -> 10
   print(c)
   -> [10]
+ 
