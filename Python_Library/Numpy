@@ -1,7 +1,7 @@
 < 자료형 >
 - int : 부호 O 정수
 - unit : 부호 X 정수
-- float : 실수 
+- float : 실수
 - complex : 복소수
 - bool : 논리형
 - string_ : 문자열
