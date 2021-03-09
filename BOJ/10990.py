@@ -1,3 +1,4 @@
+< 1st >
 a=int(input())
 n=0
 for i in range(a):
@@ -13,4 +14,9 @@ for i in range(a):
     print()
 
 
-- 길이 줄이기!
+< 2nd >
+a = int(input())
+print(' '*(a-1)+'*')
+for i in range(a-1):
+    print(' '*(a-i-2)+'*'+' '*(2*i+1)+'*')
+
