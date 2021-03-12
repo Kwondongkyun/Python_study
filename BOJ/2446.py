@@ -11,3 +11,5 @@ for i in range(a-1):
     for k in range(2*i+3):
         print('*', end='')
     print()
+
+    
