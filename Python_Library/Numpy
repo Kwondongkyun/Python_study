@@ -5,7 +5,7 @@
 - complex : 복소수
 - bool : 논리형
 - string_ : 문자열
-- object : 파이썬 객체
+- object : 파이썬 객체 
 - unicode : 유니코드
 
 
