@@ -13,7 +13,7 @@
 ※ import numpy as np 
 
 ex_1)
-import numpy as np
+import numpy as np 
 lst1=[1,2,3,4,5]
 print(lst1) -> [1, 2, 3, 4, 5]
 arr1=np.array(lst1)
